@@ -365,11 +365,6 @@ class _MyAppState extends State<MyApp> {
         localizedTitle: 'calendar'.tr,
         icon: 'ic_shortcut_calendar_todos',
       ),
-      QuickActionItem(
-        type: 'action_statistics',
-        localizedTitle: 'statistics'.tr,
-        icon: 'ic_shortcut_calendar_todos',
-      ),
     ]);
   }
 
@@ -450,12 +445,6 @@ class _MyAppState extends State<MyApp> {
           _navigatorKey.currentState?.push(
             MaterialPageRoute(builder: (_) => const CalendarTodos()),
           );
-        }
-        break;
-      case 'action_statistics':
-        if (_homeKey.currentState != null) {
-          _homeKey.currentState!.changeTabIndex(3);
-          _navigatorKey.currentState?.popUntil((r) => r.isFirst);
         }
         break;
       default:
@@ -540,7 +529,7 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: appLanguages.map((e) => e['locale'] as Locale).toList(),
       debugShowCheckedModeBanner: false,
       home: settings.onboard ? HomePage(key: _homeKey) : const OnBoarding(),
-      title: 'Zest',
+      title: '待办',
       builder: (context, child) {
         return Stack(children: [child!, const SnackBarOverlayWidget()]);
       },
