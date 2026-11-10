@@ -370,7 +370,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     image: AssetImage('assets/icons/icon.png'),
                   ),
                 ),
-                applicationName: 'Zest',
+                applicationName: '待办',
                 applicationVersion: appVersion,
               ),
             );

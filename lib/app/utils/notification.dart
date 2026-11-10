@@ -5,7 +5,7 @@ import 'package:zest/main.dart';
 import 'package:get/get.dart';
 
 class NotificationShow {
-  final String _channelId = 'Zest';
+  final String _channelId = '待办';
   final String _channelName = 'DARK NIGHT';
 
   static const String actionIdMarkDone = 'mark_done';

@@ -11,7 +11,7 @@
     />
 
     <application
-        android:label="Zest"
+        android:label="待办"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:extractNativeLibs="true"
