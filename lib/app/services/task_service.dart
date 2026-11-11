@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_initializing_formals
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:zest/app/data/db.dart';
